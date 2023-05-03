@@ -1,61 +1,61 @@
 /* ==== ===  Import ===  ==== */
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap');
-@import url(./src/css/mobileFirst.css);
+@import url('./src/css/mobileFirst.css');
 /* === ==== Variables ==== === */
 :root {
   /* === Base Color === */
-  -clr-white: #fff;
-  -clr-white-one: #f2f2f2;
-  -clr-black: #000;
-  -clr-black-one: #111;
-  -clr-black-two: #333;
+  --clr-white: #fff;
+  --clr-white-one: #f2f2f2;
+  --clr-black: #000;
+  --clr-black-one: #111;
+  --clr-black-two: #333;
   /* === Color Project === */
-  -primary-clr: #023059;
-  -secondary-clr: #255941;
-  -complement-clr-one: #bf9d7e;
-  -complement-clr-two: #d98452;
-  -complement-clr-thr: #a6634b;
+  --primary-clr: #023059;
+  --secondary-clr: #255941;
+  --complement-clr-one: #bf9d7e;
+  --complement-clr-two: #d98452;
+  --complement-clr-thr: #a6634b;
 
   /* === Font Family === */
-  -font-family-title: 'Comme', sans-serif;
-  -font-family-global: 'DM Sans', sans-serif;
+  --font-family-title: 'Comme', sans-serif;
+  --font-family-global: 'DM Sans', sans-serif;
 
   /* === Font Size === */
-  -font-sm: 1.2rem;
-  -font-sm-plus: 1.4rem;
-  -font-md: 1.6rem;
-  -font-md-plus: 1.8rem;
-  -font-title: 2.4rem;
-  -font-title-plus: 3rem;
-  -font-title-extra: 4rem;
+  --font-sm: 1.2rem;
+  --font-sm-plus: 1.4rem;
+  --font-md: 1.6rem;
+  --font-md-plus: 1.8rem;
+  --font-title: 2.4rem;
+  --font-title-plus: 3rem;
+  --font-title-extra: 4rem;
 
   /* === Margin & Padding === */
-  -margin: 2rem auto;
-  -margin-top-start: 2rem;
-  -margin-bottom-start: 2rem;
-  -margin-right-start: 2rem;
-  -margin-left-start: 2rem;
+  --margin: 2rem auto;
+  --margin-top-start: 2rem;
+  --margin-bottom-start: 2rem;
+  --margin-right-start: 2rem;
+  --margin-left-start: 2rem;
 
-  -padding: 1rem;
-  -padding-btn: 1.5rem 3rem;
+  --padding: 1rem;
+  --padding-btn: 1.5rem 3rem;
 
   /* === display === */
-  -width: 100%;
-  -height: 100%;
-  -max-width-view: 100vw;
-  -max-height-view: 100vh;
-  -max-width-content: 340px;
-  -max-width-content: 640px;
-  -max-width-content: 768px;
-  -min-width-content: 1280px;
-  -min-width-content: 1440px;
-  -display: flex;
-  -grid: grid;
-  -grid-col-fit: repeat(auto-fit, minmax(15rem, 1fr));
-  -grid-col-fill: repeat(auto-fill, minmax(15rem, 1fr));
-  -grid-row: auto;
-  -grid-auto-flow: row;
+  --width: 100%;
+  --height: 100%;
+  --max-width-view: 100vw;
+  --max-height-view: 100vh;
+  --max-width-content: 340px;
+  --max-width-content: 640px;
+  --max-width-content: 768px;
+  --min-width-content: 1280px;
+  --min-width-content: 1440px;
+  --display: flex;
+  --grid: grid;
+  --grid-col-fit: repeat(auto-fit, minmax(15rem, 1fr));
+  --grid-col-fill: repeat(auto-fill, minmax(15rem, 1fr));
+  --grid-row: auto;
+  --grid-auto-flow: row;
   /* === Webkit === */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -86,7 +86,8 @@ ul {
 
 body {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
+  font-family: var(--font-family-global);
 }
 
 h1 {
