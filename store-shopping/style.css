@@ -1,97 +1,120 @@
+/* ==== ===  Import ===  ==== */
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap');
+@import url(./src/css/mobileFirst.css);
+/* === ==== Variables ==== === */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* === Base Color === */
+  -clr-white: #fff;
+  -clr-white-one: #f2f2f2;
+  -clr-black: #000;
+  -clr-black-one: #111;
+  -clr-black-two: #333;
+  /* === Color Project === */
+  -primary-clr: #023059;
+  -secondary-clr: #255941;
+  -complement-clr-one: #bf9d7e;
+  -complement-clr-two: #d98452;
+  -complement-clr-thr: #a6634b;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* === Font Family === */
+  -font-family-title: 'Comme', sans-serif;
+  -font-family-global: 'DM Sans', sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* === Font Size === */
+  -font-sm: 1.2rem;
+  -font-sm-plus: 1.4rem;
+  -font-md: 1.6rem;
+  -font-md-plus: 1.8rem;
+  -font-title: 2.4rem;
+  -font-title-plus: 3rem;
+  -font-title-extra: 4rem;
+
+  /* === Margin & Padding === */
+  -margin: 2rem auto;
+  -margin-top-start: 2rem;
+  -margin-bottom-start: 2rem;
+  -margin-right-start: 2rem;
+  -margin-left-start: 2rem;
+
+  -padding: 1rem;
+  -padding-btn: 1.5rem 3rem;
+
+  /* === display === */
+  -width: 100%;
+  -height: 100%;
+  -max-width-view: 100vw;
+  -max-height-view: 100vh;
+  -max-width-content: 340px;
+  -max-width-content: 640px;
+  -max-width-content: 768px;
+  -min-width-content: 1280px;
+  -min-width-content: 1440px;
+  -display: flex;
+  -grid: grid;
+  -grid-col-fit: repeat(auto-fit, minmax(15rem, 1fr));
+  -grid-col-fill: repeat(auto-fill, minmax(15rem, 1fr));
+  -grid-row: auto;
+  -grid-auto-flow: row;
+  /* === Webkit === */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
+/* === ====  CSS Style Global ====  === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+  color: var(-secondary-clr);
+}
+
+ul {
+  list-style: none;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-weight: 900;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+p,
+span {
+  letter-spacing: 0.1rem;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: var(-secondary-clr);
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(-primary-clr);
   }
 }
