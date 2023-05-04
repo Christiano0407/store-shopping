@@ -1,5 +1,6 @@
 //**! === Imports === */
 import '../style.css';
+import heroImg from '../src/img/shopping.jpg';
 //** ==== === Header === ==== */
 export const headerPlus = (document.querySelector(`#idHeader`).innerHTML = ` 
  <header class="header__container">
@@ -28,10 +29,21 @@ export const headerPlus = (document.querySelector(`#idHeader`).innerHTML = `
        </div>
 
        <div class="nav-shop">
-          <a class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></button>
        </div>
    </nav>
-   <section class="header__container--hero" id="idHero"></section>
+   <section class="header__container--hero" id="idHero">
+      <div class="container-hero">
+         <div class="hero-text">
+            <h2 class="hero-textTitle">Shopping And Department Store</h2>
+            <p class="hero-textParagraph">Shopping with the best brands. The future of commerce it's now</p>
+            <button class="hero-btn">Buy Here</button>
+            </div>
+         <figure class="hero-figure">
+            <img class="hero-img" src=${heroImg}>
+         </figure>
+      </div>
+   </section>
  </header>
 `);
 
